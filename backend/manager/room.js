@@ -1,5 +1,5 @@
 const rooms = new Map();
-const GLOBAL_ROOM_ID = 1;
+let GLOBAL_ROOM_ID = 1;
 
 const generateRoomId = () => {
     return GLOBAL_ROOM_ID++;

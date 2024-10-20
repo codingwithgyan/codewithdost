@@ -26,7 +26,7 @@ const addUser = (user, socket) => {
     handshake(socket);
 }
 
-const removeUser = () => {
+const removeUser = (socketId) => {
     const user = userList.find(user => user.socket.id === socketId); 
     userList = userList.filter(user => user.socket.id !== socketId);
     queue = queue.filter(user => user === socketId);
